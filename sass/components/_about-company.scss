@@ -1,0 +1,37 @@
+.about-company {
+    padding-top: 94px;
+
+    .description {
+        display: flex;
+
+        li {
+            max-width: 270px;
+            margin-left: 30px;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+
+        .description__box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 120px;
+            background-color: var(--color-white-gray);
+            margin-bottom: 30px;
+        }
+
+        .description__headings {
+            @include font(700, 14px, 16px, 0.03em);
+            text-transform: uppercase;
+            color: var(--color-dark);
+        }
+        
+        .description__text {
+            @include font(400, 14px, 24px, 0.03em);
+            padding-top: 10px;
+            color: var(--color-gray);
+        }
+    }
+}
